@@ -16,6 +16,7 @@ from django.http import FileResponse, Http404, StreamingHttpResponse
 api = NinjaAPI()
 User = get_user_model()
 
+#added signup api
 @api.post("/signup")
 def signup(request, data: SignupIn):
     if User.objects.filter(email=data.email).exists():
@@ -29,6 +30,8 @@ def signup(request, data: SignupIn):
     )
     return {"detail": "User created successfully"}
 
+
+#login api for authentication
 @api.post("/login", response=TokenOut)
 def login(request, data: LoginIn):
     try:
