@@ -27,7 +27,7 @@ const Footer = () => {
                     <p className="p-3 bg-white rounded-md"><Instagram /></p>
                 </div>
                 <p className="mt-2">
-                    Copyright &copy; Filegen 2025, All rights reserved!
+                    Copyright &copy; Filegen 2025, All right reserved !
                 </p>
             </div>
         </div>
