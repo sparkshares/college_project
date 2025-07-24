@@ -62,14 +62,14 @@ const Navbar = () => {
         </div>
         <div className="flex gap-4 ">
           {access ? (
-            <Button onClick={handleLogout}>Logout</Button>
+            <Button onClick={handleLogout}>Log out</Button>
           ) : (
             <>
               <Link href="/login">
-                <Button>Login</Button>
+                <Button>Log in</Button>
               </Link>
               <Link href="/signup">
-                <Button>Signup</Button>
+                <Button>Sign up</Button>
               </Link>
             </>
           )}
