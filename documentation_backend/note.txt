@@ -1,0 +1,37 @@
+go get github.com/gofiber/fiber/v2
+go get github.com/joho/godotenv
+go get github.com/lib/pq               # PostgreSQL driver
+go get github.com/golang-jwt/jwt/v5   # JWT
+go get github.com/jackc/pgx/v5
+
+
+Command to run = go run cmd/main.go
+
+Our artitech is like this = 
+
+your-project/
+├── cmd/                  # Entry point of the app
+│   └── main.go
+├── config/               # App configuration (env, DB setup)
+│   └── config.go
+├── controllers/          # HTTP handlers
+│   └── user_controller.go
+├── models/               # Database models
+│   └── user.go
+├── routes/               # Route definitions
+│   └── user_routes.go
+├── services/             # Business logic
+│   └── user_service.go
+├── middleware/           # Custom middleware (auth, logger, etc.)
+│   └── auth.go
+├── utils/                # Utility functions (helpers, JWT, etc.)
+│   └── jwt.go
+├── .env                  # Environment variables
+├── go.mod
+└── go.sum
+
+
+
+export air = 
+echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.zshrc
+source ~/.zshrc
