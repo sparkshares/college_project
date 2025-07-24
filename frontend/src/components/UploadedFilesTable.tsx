@@ -9,7 +9,7 @@ interface UploadedFilesTableProps {
 const UploadedFilesTable: React.FC<UploadedFilesTableProps> = ({ files, loading, onDownload }) => (
   <div className="bg-white rounded-xl shadow p-4 overflow-x-auto">
     {loading ? (
-      <div className="text-center py-4">Loading files...</div>
+      <div className="text-center py-4">Loading files..</div>
     ) : (
       <table className="min-w-full text-left">
         <thead>
