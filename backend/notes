@@ -1,0 +1,4 @@
+brew services start redis
+celery -A project_main worker --loglevel=info
+go run go_event_server_example.go
+python manage.py runserver

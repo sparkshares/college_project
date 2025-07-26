@@ -18,6 +18,12 @@ INSERT INTO "UserDocument" (
 );
 `
 
+const InsertUser = `
+INSERT INTO "UserRelatedData" (user_id, username, display_name, profile_picture, email)
+	VALUES ($1,$2,$3, NULL,$4)
+
+`
+
 const UpdateUserDocument = `
 UPDATE "UserDocument" SET
     content_json = $1,

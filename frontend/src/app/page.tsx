@@ -16,17 +16,17 @@ export default function Home() {
             Welcome to FileGen
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Experience the future of file management. Upload, organize, share, and collaborate with powerful tools designed for modern workflows.
+            Secure file storage with chunked uploads, document creation with rich text editing, and comprehensive analytics. Built for reliability and ease of use.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Link href="/signup">
               <button className="px-10 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
-                Start Free Trial
+                Get Started Free
               </button>
             </Link>
             <Link href="/about">
               <button className="px-10 py-4 bg-white border-2 border-blue-600 text-blue-700 rounded-xl font-semibold text-lg shadow-lg hover:bg-blue-50 hover:scale-105 transition-all duration-300 transform">
-                Watch Demo
+                Learn More
               </button>
             </Link>
           </div>
@@ -34,16 +34,16 @@ export default function Home() {
           {/* Hero Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
-              <div className="text-3xl font-bold text-blue-600 mb-2">10M+</div>
-              <div className="text-gray-600">Files Managed</div>
+              <div className="text-3xl font-bold text-blue-600 mb-2">100MB</div>
+              <div className="text-gray-600">Max File Size</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
-              <div className="text-3xl font-bold text-purple-600 mb-2">50K+</div>
-              <div className="text-gray-600">Happy Users</div>
+              <div className="text-3xl font-bold text-purple-600 mb-2">Any Type</div>
+              <div className="text-gray-600">File Format Support</div>
             </div>
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-white/20">
-              <div className="text-3xl font-bold text-indigo-600 mb-2">99.9%</div>
-              <div className="text-gray-600">Uptime</div>
+              <div className="text-3xl font-bold text-indigo-600 mb-2">Secure</div>
+              <div className="text-gray-600">Chunked Upload</div>
             </div>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
               Powerful Features for Every Need
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From simple file storage to advanced collaboration tools, FileGen provides everything you need to manage your digital workspace effectively.
+              FileGen offers secure file storage, document creation, and analytics - all the essential tools you need to manage your digital content effectively.
             </p>
           </div>
           
@@ -65,31 +65,31 @@ export default function Home() {
             <div className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                  <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Smart Cloud Storage</h3>
-              <p className="text-gray-600 leading-relaxed">Access your files anywhere with our intelligent cloud infrastructure. Auto-sync across all your devices with lightning-fast speeds.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Chunked File Upload</h3>
+              <p className="text-gray-600 leading-relaxed">Advanced chunked upload technology with MD5 verification ensures your large files upload reliably with pause/resume capability and error recovery.</p>
             </div>
             
             <div className="group bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a1 1 0 01-1-1V9a1 1 0 011-1h1a2 2 0 100-4H4a1 1 0 01-1-1V4a1 1 0 011-1h3a1 1 0 001-1z" />
+                  <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">AI-Powered Organization</h3>
-              <p className="text-gray-600 leading-relaxed">Let our AI automatically categorize and tag your files. Smart search finds exactly what you need in seconds.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Rich Document Editor</h3>
+              <p className="text-gray-600 leading-relaxed">Create and edit documents with our powerful TipTap-based editor. Support for headings, lists, formatting, and real-time preview.</p>
             </div>
             
             <div className="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Enterprise Security</h3>
-              <p className="text-gray-600 leading-relaxed">Bank-grade encryption, two-factor authentication, and compliance with industry standards keep your data safe.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Analytics & Reports</h3>
+              <p className="text-gray-600 leading-relaxed">Track your file uploads, downloads, and usage patterns with detailed analytics, charts, and comprehensive reporting dashboard.</p>
             </div>
           </div>
 
@@ -98,11 +98,11 @@ export default function Home() {
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Team Collaboration</h4>
-              <p className="text-gray-600 text-sm">Real-time collaboration with comments and version control.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">File Downloads</h4>
+              <p className="text-gray-600 text-sm">Download your files instantly with secure links and tracking.</p>
             </div>
             
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
@@ -112,27 +112,27 @@ export default function Home() {
                 </svg>
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">Lightning Fast</h4>
-              <p className="text-gray-600 text-sm">Optimized for speed with global CDN and caching.</p>
+              <p className="text-gray-600 text-sm">Optimized chunked uploads for maximum speed and reliability.</p>
             </div>
             
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                  <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Unlimited Storage</h4>
-              <p className="text-gray-600 text-sm">Scale your storage needs without limits or hidden fees.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">Content Management</h4>
+              <p className="text-gray-600 text-sm">Create, edit, and manage documents with rich text features.</p>
             </div>
             
             <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
               <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Mobile Ready</h4>
-              <p className="text-gray-600 text-sm">Native mobile apps for iOS and Android devices.</p>
+              <h4 className="font-semibold text-gray-900 mb-2">User Profiles</h4>
+              <p className="text-gray-600 text-sm">Personal dashboard with customizable settings and preferences.</p>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
               How FileGen Works
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get started in minutes with our intuitive three-step process
+              Get started with FileGen in three simple steps
             </p>
           </div>
           
@@ -162,8 +162,8 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Upload & Organize</h3>
-              <p className="text-gray-600 leading-relaxed">Simply drag and drop your files or folders. Our AI automatically organizes them into smart categories.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Upload & Store</h3>
+              <p className="text-gray-600 leading-relaxed">Upload files of any type up to 100MB using our secure chunked upload system with pause/resume capability and MD5 verification.</p>
             </div>
             
             <div className="text-center">
@@ -177,16 +177,16 @@ export default function Home() {
                   </svg>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Collaborate & Share</h3>
-              <p className="text-gray-600 leading-relaxed">Invite team members, set permissions, and collaborate in real-time with powerful sharing tools.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Create & Edit</h3>
+              <p className="text-gray-600 leading-relaxed">Write documents using our rich text editor with support for headings, lists, formatting, and real-time preview features.</p>
             </div>
             
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Access Anywhere</h3>
-              <p className="text-gray-600 leading-relaxed">Access your files from any device, anywhere in the world. Sync seamlessly across all platforms.</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Analyze & Track</h3>
+              <p className="text-gray-600 leading-relaxed">Monitor your uploads, downloads, and usage patterns with detailed analytics and reporting dashboard to optimize your workflow.</p>
             </div>
           </div>
         </div>
@@ -210,10 +210,10 @@ export default function Home() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-900">Alex Johnson</h4>
-                  <p className="text-gray-600 text-sm">Product Manager</p>
+                  <p className="text-gray-600 text-sm">IT Administrator</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"FileGen has revolutionized how our team manages documents. The AI organization feature saves us hours every week!"</p>
+              <p className="text-gray-700 italic">"FileGen's chunked upload system has been a game-changer for our large file transfers. The reliability and resume capability are exactly what we needed!"</p>
               <div className="flex text-yellow-400 mt-4">
                 ⭐⭐⭐⭐⭐
               </div>
@@ -226,10 +226,10 @@ export default function Home() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-900">Sarah Chen</h4>
-                  <p className="text-gray-600 text-sm">Creative Director</p>
+                  <p className="text-gray-600 text-sm">Content Manager</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"The collaboration features are incredible. Real-time editing and commenting have made our workflow so much smoother."</p>
+              <p className="text-gray-700 italic">"The document editor is fantastic! Creating and formatting content is so intuitive, and the analytics help us understand our content performance."</p>
               <div className="flex text-yellow-400 mt-4">
                 ⭐⭐⭐⭐⭐
               </div>
@@ -242,10 +242,10 @@ export default function Home() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-900">Mike Rodriguez</h4>
-                  <p className="text-gray-600 text-sm">Startup Founder</p>
+                  <p className="text-gray-600 text-sm">Small Business Owner</p>
                 </div>
               </div>
-              <p className="text-gray-700 italic">"Security was our top concern, and FileGen delivers. Enterprise-grade protection with an intuitive interface."</p>
+              <p className="text-gray-700 italic">"Simple, secure, and reliable. FileGen handles all our file storage needs with great analytics that help us make data-driven decisions."</p>
               <div className="flex text-yellow-400 mt-4">
                 ⭐⭐⭐⭐⭐
               </div>
@@ -254,32 +254,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your File Management?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join over 50,000 users who trust FileGen with their most important files. Start your free trial today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/signup">
-              <button className="px-10 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 transform">
-                Start Free Trial
-              </button>
-            </Link>
-            <Link href="/contact">
-              <button className="px-10 py-4 bg-transparent border-2 border-white text-white rounded-xl font-semibold text-lg hover:bg-white hover:text-blue-600 transition-all duration-300">
-                Contact Sales
-              </button>
-            </Link>
-          </div>
-          <div className="mt-8 text-blue-100">
-            <p>✓ No credit card required  ✓ 14-day free trial  ✓ Cancel anytime</p>
-          </div>
-        </div>
-      </section>
+      
     </main>
   );
 }

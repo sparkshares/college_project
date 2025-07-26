@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 interface Doc {
   id: number;
   title: string;
   lastEdited: string;
+  slug: string;
 }
 
 const ContentsTable = ({ docs }: { docs: Doc[] }) => (
@@ -25,8 +27,13 @@ const ContentsTable = ({ docs }: { docs: Doc[] }) => (
         ) : (
           docs.map((doc, idx) => (
             <tr key={doc.id} className={idx % 2 ? "bg-gray-50" : ""}>
-              <td className="py-2 px-4 font-medium text-blue-700 hover:underline cursor-pointer">
-                {doc.title}
+              <td className="py-2 px-4">
+                <Link 
+                  href={`/dashboard/contents/view-content/${doc.slug}`}
+                  className="font-medium text-blue-700 hover:text-blue-900 hover:underline cursor-pointer transition-colors"
+                >
+                  {doc.title}
+                </Link>
               </td>
               <td className="py-2 px-4">{doc.lastEdited}</td>
             </tr>

@@ -6,3 +6,11 @@ python-dotenv
 django-ninja-jwt
 django-cors-headers
 cryptography
+llama-cpp-python
+PyPDF2
+python-docx
+chardet
+requests
+aiohttp
+celery
+redis

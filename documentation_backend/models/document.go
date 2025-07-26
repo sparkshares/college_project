@@ -1,6 +1,8 @@
 package models
 
-import "time"
+import (
+	"time"
+)
 
 type RetriveDocument struct {
 	ID            int         `json:"id"`
@@ -16,9 +18,9 @@ type RetriveDocument struct {
 }
 
 type UserProfile struct {
-	Username       string `json:"username"`
-	DisplayName    string `json:"display_name"`
-	ProfilePicture string `json:"profile_picture"`
+	Username       string  `json:"username"`
+	DisplayName    string  `json:"display_name"`
+	ProfilePicture *string `json:"profile_picture"`
 }
 
 type RetriveDocuments struct {

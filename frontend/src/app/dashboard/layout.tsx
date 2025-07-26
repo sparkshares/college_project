@@ -22,11 +22,15 @@ const DashboardLayout = ({children }:{children : React.ReactNode}) => {
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
-                <div className="min-h-screen flex flex-col">
+                <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
                     <DashboardNavbar/>
-                    <div className="flex flex-1">
+                    <div className="flex">
                         <DashboardSidebar/>
-                        <main className="flex-1 p-6">{children}</main>
+                        <main className="flex-1 ml-72">
+                            <div className="p-4 sm:p-6 lg:p-8">
+                                {children}
+                            </div>
+                        </main>
                     </div>
                 </div>
             </PersistGate>

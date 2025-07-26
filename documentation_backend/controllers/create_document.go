@@ -6,22 +6,52 @@ import (
 	"document_management_api/utils"
 	"errors"
 	"strconv"
+	"strings"
 
 	"github.com/gofiber/fiber/v2"
 )
 
 func CreateDocumentController(c *fiber.Ctx) error {
-	var doc models.CreateDocument
+	// Extract token from Authorization header
+	authHeader := c.Get("Authorization")
+	if authHeader == "" {
+		return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "Authorization header is missing", nil, nil)
+	}
 
+	// Remove "Bearer " prefix from token
+	tokenString := strings.TrimPrefix(authHeader, "Bearer ")
+	if tokenString == authHeader {
+		return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "Invalid authorization format. Use 'Bearer <token>'", nil, nil)
+	}
+
+	// Decode user ID from JWT token
+	userID, err := utils.DecodeUserIDFromToken(tokenString)
+	if err != nil {
+		switch {
+		case errors.Is(err, utils.ErrExpiredToken):
+			return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "Token has expired", nil, nil)
+		case errors.Is(err, utils.ErrInvalidToken):
+			return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "Invalid token", nil, nil)
+		case errors.Is(err, utils.ErrUserIDNotFound):
+			return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "User ID not found in token", nil, nil)
+		default:
+			return utils.FormatResponse(c, fiber.StatusUnauthorized, "error", "Token validation failed", nil, err.Error())
+		}
+	}
+
+	var doc models.CreateDocument
 	if err := c.BodyParser(&doc); err != nil {
 		return utils.FormatResponse(c, fiber.StatusBadRequest, "error", "Invalid request payload", nil, err.Error())
 	}
 
-	if doc.UserId == 0 || doc.ContentJSON == "" {
+	// Set the user ID from the JWT token
+	doc.UserId = userID
+
+	if doc.ContentJSON == "" {
 		return utils.FormatResponse(c, fiber.StatusBadRequest, "error", "Missing required fields", nil, nil)
 	}
 
-	err := services.CreateUserDocumentService(&doc)
+	err = services.CreateUserDocumentService(&doc)
 	if err != nil {
 		return utils.FormatResponse(c, fiber.StatusInternalServerError, "error", "Failed to create document", nil, err.Error())
 	}
@@ -35,7 +65,6 @@ func CreateDocumentController(c *fiber.Ctx) error {
 		nil,
 	)
 }
-
 func UpdateDocumentController(c *fiber.Ctx) error {
 	var payload models.UpdateDocumentPayload
 
