@@ -37,12 +37,13 @@ const blob = await fileService.downloadFile(access_token, fileId);
 
 ## Available Services
 
-### AuthService
+### AuthService API
 - `login(email, password)`
 - `signup(email, password, username)`
 - `forgotPassword(email)`
 - `getProfile(token)`
 - `updateProfile(token, profileData)`
+
 
 ### FileService
 - `getMyFiles(token)`
