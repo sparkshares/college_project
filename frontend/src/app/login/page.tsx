@@ -194,9 +194,7 @@ export default function Login() {
                   Remember me
                 </label>
               </div>
-              <Link href="/forgot-password" className="text-sm text-blue-600 hover:text-blue-500 font-medium">
-                Forgot password?
-              </Link>
+
             </div>
 
             {/* Error Message */}
