@@ -126,7 +126,8 @@ export default function Signup() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex items-center justify-center p-4 py-12">
-      {/* Main Container */}
+      {/* Main Container Page */}
+
       <div className="w-full max-w-md">
         {/* Logo Section */}
         <div className="text-center mb-8">
